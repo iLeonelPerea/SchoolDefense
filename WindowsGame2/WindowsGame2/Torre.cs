@@ -22,7 +22,7 @@ namespace WindowsGame2
         //Nombre de la imagen para este alien
         String spriteTorre;
         // Variable que guarda la resistencia que tiene el alien. Esta sera la variable que descontaremos si una torre lo ataca
-        int fuerza = 30;
+        int fuerza = 20;
         int alcanze = 150;
         private ContentManager content;
 
