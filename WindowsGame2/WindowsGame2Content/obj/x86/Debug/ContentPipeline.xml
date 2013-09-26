@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\alien1.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\alien1.xnb</Output>
       <Time>2013-09-21T21:48:10-05:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\world1.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\world1.xnb</Output>
       <Time>2013-09-21T15:53:40-05:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\alien2.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\alien2.xnb</Output>
       <Time>2013-09-21T21:47:46-05:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\lunch.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\lunch.xnb</Output>
       <Time>2013-09-21T22:15:30-05:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\bullet.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\bullet.xnb</Output>
       <Time>2013-09-25T12:10:12-05:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\torre1.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\sprites\torre1.xnb</Output>
       <Time>2013-09-25T12:49:02-05:00</Time>
     </Item>
     <Item>
@@ -61,7 +61,7 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Output>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
       <Time>2013-09-21T15:43:00-05:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -70,10 +70,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2Content\</RootDirectory>
+      <LoggerRootDirectory>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\</LoggerRootDirectory>
+      <IntermediateDirectory>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>Z:\Repos\SchoolDefense\WindowsGame2\WindowsGame2\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

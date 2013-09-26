@@ -24,7 +24,7 @@ namespace WindowsGame2
         /// <returns></returns>
         public static Ruta[] getRuta(String file)
         {
-            StreamReader objReader = new StreamReader("\\"+file);            
+            StreamReader objReader = new StreamReader("..\\..\\..\\..\\..\\" + file);            
             string sLine = "";
             ArrayList arregloText = new ArrayList();
             // Guardamos cada linea de texto del archivo en un elemento de una ArrayList
