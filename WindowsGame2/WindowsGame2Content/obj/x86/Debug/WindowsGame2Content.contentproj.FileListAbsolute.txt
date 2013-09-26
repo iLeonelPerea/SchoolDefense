@@ -1,0 +1,2 @@
+C:\Users\itinajero\Documents\Visual Studio 2010\Projects\GameTower\WindowsGame2\WindowsGame2Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\LeonelPereaTrejo\Documents\Visual Studio 2010\Projects\GameTower\GameTower\WindowsGame2\WindowsGame2Content\obj\x86\Debug\WindowsGame2Content.contentprojResolveAssemblyReference.cache
