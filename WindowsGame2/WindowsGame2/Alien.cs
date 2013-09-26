@@ -17,6 +17,12 @@ namespace WindowsGame2
         Rectangle rectangle;
         // Esta variable va a guardar la posicion actual del alien
         Vector2 posicionActual;
+
+        public Vector2 PosicionActual
+        {
+            get { return posicionActual; }
+            set { posicionActual = value; }
+        }
         // Esta variable va a guardar la posicion inicial del alien
         Vector2 posicionInicio;
         // Variable que sirve para indicar el numero de pixeles que ira avanzando el alien (Velocidad)
@@ -31,6 +37,13 @@ namespace WindowsGame2
         public bool alive = false;
         // Variable que guarda la resistencia que tiene el alien. Esta sera la variable que descontaremos si una torre lo ataca
         int resistencia = 300;
+        int vida = 100;
+
+        public int Vida
+        {
+            get { return vida; }
+            set { vida = value; }
+        }
         private ContentManager content;        
 
         public Alien(Vector2 posicionInicial, Ruta[] ruta, String spriteAlien)
@@ -52,9 +65,11 @@ namespace WindowsGame2
 
         public void Update()
         {
+            if (vida <= 0)
+                alive = false;
             // Si el alien no esta vivo, sale inmediatamente, no se ejecuta lo demas
             if (!alive) return;
-            
+           
             // Ya termino su recorrido completo el alien. Desde Inicio hasta el Fin
             if (posRuta == ruta.Length)
             {               
@@ -74,7 +89,8 @@ namespace WindowsGame2
 
         public void Draw(SpriteBatch sprite)
         {
-            sprite.Draw(alienTexture, new Rectangle((int)posicionActual.X, (int)posicionActual.Y, 48, 48), Color.White);
+            if (alive)
+                sprite.Draw(alienTexture, new Rectangle((int)posicionActual.X, (int)posicionActual.Y, 48, 48), Color.White);
         }
 
         public void mover() 

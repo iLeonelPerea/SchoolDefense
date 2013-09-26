@@ -80,10 +80,19 @@ namespace WindowsGame2
             if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                 this.Exit();
             // Por cada arreglo que existe en la lista, siempre estaremos llamandos su metodo Update.
+            foreach (Torre t in GrupoTorres.objList)
+            {
+                t.Update();
+            }
             foreach (Alien o in GrupoAliens.objList)
             {
                 o.Update();
+                foreach (Torre t in GrupoTorres.objList)
+                {
+                    o.Vida -= t.Atacar(o.PosicionActual);
+                }
             }
+            
             iteraciones++;
             /*
              * Cada 5 Segundos (300/60) le daremos vida a un alien. No debemos sobrepasar el tamaño de la lista.

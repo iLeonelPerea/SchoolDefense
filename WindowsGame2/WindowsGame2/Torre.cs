@@ -18,11 +18,12 @@ namespace WindowsGame2
         // Esta variable va a guardar la posicion actual del alien
         Vector2 posicion;
         // Variable que sirve para indicar el numero de pixeles que ira avanzando el alien (Velocidad)
-        int velocidad = 1;
+        int velocidad = 100;
         //Nombre de la imagen para este alien
         String spriteTorre;
         // Variable que guarda la resistencia que tiene el alien. Esta sera la variable que descontaremos si una torre lo ataca
-        int fuerza = 300;
+        int fuerza = 30;
+        int alcanze = 150;
         private ContentManager content;
 
         public Torre(Vector2 posicionInicial, String spriteTorre)
@@ -42,7 +43,24 @@ namespace WindowsGame2
 
         public void Update()
         {
-            
+            if (velocidad == 100)
+                velocidad = 0;
+            else
+                velocidad++;
+        }
+
+        public int Atacar(Vector2 posicionAlien)
+        {
+            if (velocidad == 0)
+            {
+                Rectangle rangoAtaque = new Rectangle((int)posicion.X - alcanze, (int)posicion.Y - alcanze, 48 + alcanze, 48 + alcanze);
+                Rectangle alien = new Rectangle((int)posicionAlien.X, (int)posicionAlien.Y, 48, 48);
+                if (rangoAtaque.Intersects(alien))
+                {
+                    return 30;
+                }
+            }
+            return 0;
         }
 
         public void Draw(SpriteBatch sprite)
