@@ -31,7 +31,8 @@ namespace WindowsGame2
         private static int aliensActivos=-1;
         int iteraciones = 0;        
         public static int NO_DESAYUNOS = 10;
-        World world1;       
+        World world1;
+        GrupoTorres grupoTorres = new GrupoTorres();
 
         public Game1()
         {
@@ -49,6 +50,7 @@ namespace WindowsGame2
             world1 = new World(GraphicsDevice.Viewport.Width, GraphicsDevice.Viewport.Height);
             // Creamos el arreglo de los aliens. 
             GrupoAliens.Initialize();
+            GrupoTorres.Initialize();
             base.Initialize();
         }
         
@@ -92,7 +94,8 @@ namespace WindowsGame2
                 iteraciones = 0; // Volvemos a reiniciar el contador de segundos, para volver a darle vida a otro despues de otros 5 seg.                
                 GrupoAliens.objList[aliensActivos].alive = true; // Le damos vida al alien que sigue en la lista
             }
-
+            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
+                grupoTorres.agregarTorre(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), this.Content);
             base.Update(gameTime);
         }        
         // El metodo Draw se ejecuta inmediatamente despues del Update, es decir tambien 60 veces por segundo
@@ -109,8 +112,14 @@ namespace WindowsGame2
             spriteBatch.DrawString(font, "Time :" + gameTime.TotalGameTime.Minutes + ":" + gameTime.TotalGameTime.Seconds, new Vector2(5, 5), Color.Red);
             spriteBatch.DrawString(font, "Iteraciones :" +iteraciones, new Vector2(5, 25), Color.Red);
             spriteBatch.DrawString(font, "Active Aliens :" + (aliensActivos+1), new Vector2(5, 45), Color.Red);
+
+            spriteBatch.DrawString(font, "posicion del mouse X:" + (Mouse.GetState().X) + " Y: " + (Mouse.GetState().Y), new Vector2(5, 65), Color.Red);
             // Por cada alien contenido en la lista, llamaremos su metodo Draw()
             foreach (Alien o in GrupoAliens.objList)
+            {
+                o.Draw(this.spriteBatch);
+            }
+            foreach (Torre o in GrupoTorres.objList)
             {
                 o.Draw(this.spriteBatch);
             }
