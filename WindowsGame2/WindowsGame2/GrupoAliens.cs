@@ -19,7 +19,7 @@ namespace WindowsGame2
         public static void Initialize()
         {
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)//Waves de ataque
             {
                 Alien o = new Alien(new Vector2(-48, 126), Game1.ruta, "alien1");   
                 o.alive = false;

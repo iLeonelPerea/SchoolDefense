@@ -18,7 +18,7 @@ namespace WindowsGame2
         // Esta variable va a guardar la posicion actual del alien
         Vector2 posicion;
         // Variable que sirve para indicar el numero de pixeles que ira avanzando el alien (Velocidad)
-        int velocidad = 100;
+        int velocidad = 130;
         //Nombre de la imagen para este alien
         String spriteTorre;
         // Variable que guarda la resistencia que tiene el alien. Esta sera la variable que descontaremos si una torre lo ataca
