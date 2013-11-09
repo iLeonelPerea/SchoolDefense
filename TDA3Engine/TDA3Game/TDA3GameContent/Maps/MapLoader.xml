@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="TDA3Engine.MapLoader">
+    <MapsContentNames>
+      <Item>Forest</Item>
+      <Item>Snow</Item>
+    </MapsContentNames>
+  </Asset>
+</XnaContent>
