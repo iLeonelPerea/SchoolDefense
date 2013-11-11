@@ -164,7 +164,7 @@ namespace TDA3Engine
         {
             spriteFont = sFont;
             InitializeTablas();
-            //iniciarSinTablas();
+            iniciarSinTablas();
         }
 
         void clickableTower_LeftClickEvent(object sender, EventArgs e)
@@ -228,14 +228,14 @@ namespace TDA3Engine
 
             SelectedTower.Add("TowerName", new Text(clickedTower.Name + " " + (clickedTower.Level + 1).ToString(), spriteFont, new Vector2(icon.Rectangle.Right + padding, SelectedTower.Dimensions.Top + padding)));
             SelectedTower.Add("TowerDescription", new Text(clickedTower.Description, spriteFont, new Vector2(icon.Rectangle.Right + padding, SelectedTower.Dimensions.Top + padding + spriteFont.LineSpacing)));
-
+            
             Text stats = new Text(clickedTower.CurrentStatistics.ToShortString(), spriteFont, new Vector2(SelectedTower.Dimensions.Left + padding, icon.Rectangle.Bottom));
-            SelectedTower.Add("Stats", stats);
+            //SelectedTower.Add("Stats", stats);
 
             Text specials = new Text(String.Format("Specials: {0}", t.bulletBase.Type == BulletType.Normal ? "None" : t.bulletBase.Type.ToString()),
                 spriteFont, new Vector2(SelectedTower.Dimensions.Left + padding, stats.Rectangle.Bottom));
-            SelectedTower.Add("Specials", specials);
-
+            //SelectedTower.Add("Specials", specials);
+            
             Text price = new Text(String.Format("Price: {0}", clickedTower.TotalCost), spriteFont, new Vector2(SelectedTower.Dimensions.Left + padding, specials.Rectangle.Bottom));
             SelectedTower.Add("Price", price);
 
@@ -294,7 +294,7 @@ namespace TDA3Engine
             Button b = null;
             if (clickedTower.UpgradeCost <= PoderesTotales)
             {
-                string bt = String.Format("Poderes: {0}", clickedTower.UpgradeCost);
+                string bt = String.Format("Dulces Necesarios: {0}", clickedTower.UpgradeCost);
                 Vector2 btdim = spriteFont.MeasureString(bt);
                 Vector2 bpos = new Vector2((int)(SelectedTower.Dimensions.Left + (Session.Map.SmallNormalButtonTexture.Width / 2.0f) +
                     (SelectedTower.Dimensions.Width - Session.Map.SmallNormalButtonTexture.Width) / 2.0f), (int)(y + (Session.Map.SmallNormalButtonTexture.Height / 2.0f)));
@@ -308,7 +308,7 @@ namespace TDA3Engine
             }
             else
             {
-                string bt = String.Format("Poderes: {0}", clickedTower.UpgradeCost);
+                string bt = String.Format("Dulces Necesarios: {0}", clickedTower.UpgradeCost);
                 Vector2 btdim = spriteFont.MeasureString(bt);
 
                 Vector2 bpos = new Vector2((int)(SelectedTower.Dimensions.Left + (Session.Map.SmallErrorButtonTexture.Width / 2.0f) +
@@ -554,7 +554,7 @@ namespace TDA3Engine
                     izqui = random.Next(1, 10);
                 dere = random.Next(1, 10);
                 RespCorrecta = izqui * dere;
-                string valorA = izqui + " X " + dere + " = ";
+                string valorA = izqui + "x" + dere + " -> ";
                 TablasMultiplicar.GetText("Pregunta").Value = valorA;
             }
         }
@@ -921,7 +921,7 @@ namespace TDA3Engine
                 if (is_wave_active())
                 {
                     TablasMultiplicar.GetText("Respuesta").Value = respuesta;
-                    TablasMultiplicar.GetText("Poder").Value = "Poderes: " + PoderesTotales;
+                    TablasMultiplicar.GetText("Poder").Value = "Dulce: " + PoderesTotales;
                     if (oldKeyboardState.IsKeyDown(Keys.Back) && respuesta.Length > 0 && ElapsedTime <= 0)
                     {
                         respuesta = respuesta.Remove(respuesta.Length - 1);
@@ -984,15 +984,15 @@ namespace TDA3Engine
                     if (oldKeyboardState.IsKeyDown(Keys.Enter) && ElapsedTime <= 0)
                     {
                         //Validar respuesta
-                        if (respuesta != "correcto" && respuesta != "falso" && respuesta != "" && RespCorrecta == int.Parse(respuesta))
+                        if (respuesta != "si" && respuesta != "no" && respuesta != "" && RespCorrecta == int.Parse(respuesta))
                         {
                             if (PoderesTotales < 5)
                                 PoderesTotales++;
-                            respuesta = "correcto";
+                            respuesta = "si";
                         }
                         else
                         {
-                            respuesta = "falso";
+                            respuesta = "no";
                         }
                         ElapsedTime = 15;
                     }

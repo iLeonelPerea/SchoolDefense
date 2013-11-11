@@ -8,7 +8,7 @@
     <ThumbnailAsset>thumbnail</ThumbnailAsset>
     <TileSheetAsset>tiles</TileSheetAsset>
     <GroundTiles>
-      0 0 0 0 0 2 2 2 0 0 4 0 5 0 0
+      0 0 0 0 0 2 2 2 0 0 4 0 0 0 0
       0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -16,7 +16,7 @@
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 2 0 0 0 4 0 0 0 0
+      0 0 0 0 0 0 0 0 0 0 4 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     </GroundTiles>
@@ -26,22 +26,24 @@
       7 0 0 0 7 0 0 0 0 0 0 0 0 7 0
       7 0 0 0 7 0 0 0 0 0 0 0 0 7 0
       7 0 0 0 7 0 0 0 0 0 0 0 0 7 0
-      7 0 0 0 7 11 6 6 6 6 6 6 6 8 0
-      7 0 0 0 7 7 0 0 0 0 0 0 0 0 0
-      10 6 6 6 8 7 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+      7 0 0 0 7 0 0 0 0 0 0 0 0 7 0
+      7 0 0 0 7 0 0 0 0 0 0 0 0 7 0
+      10 6 6 6 8 0 0 0 0 0 0 0 0 7 0
+      0 0 0 0 0 0 0 0 0 0 0 0 0 7 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
     </PathTiles>
-    <SpawnLocation>5 8</SpawnLocation>
+    <SpawnLocation>13 9</SpawnLocation>
     <SpawnAssetName>gate</SpawnAssetName>
     <CastleLocation>0 0</CastleLocation>
     <CastleAssetName>escuela</CastleAssetName>
     <Endless>false</Endless>
     <TowersAvailable>
-      <Item>BasicTower</Item>
-      <Item>TowerDoS</Item>
-      <Item>ArmorTower</Item>
+      <Item>Nerdin</Item>
+      <Item>Pegajosa</Item>
+      <Item>Resorterin</Item>
+      <Item>Jugueton</Item>
+      <Item>Gloton</Item>
     </TowersAvailable>
     <WavesAvailable>
       <Item>VerySlowAliens</Item>
@@ -51,7 +53,7 @@
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
     <Difficulty>1</Difficulty>
-    <Money>3000000</Money>
+    <Money>2800</Money>
     <ForeColorArray>124 189 70 255</ForeColorArray>
     <ErrorColorArray>255 0 0 255</ErrorColorArray>
     <InfoBarBackgroundAsset>infobar_bg</InfoBarBackgroundAsset>
