@@ -5,7 +5,7 @@
     <Description/>
     <Alpha>1.0</Alpha>
     <Speed>50</Speed>
-    <Type>Terrain</Type>
+    <Type>Normal</Type>
     <Health>150</Health>
     <TextureAsset>alien</TextureAsset>
     <HitTextureAsset>alien_hit</HitTextureAsset>

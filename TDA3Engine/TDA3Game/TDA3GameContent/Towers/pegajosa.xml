@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <XnaContent>
   <Asset Type="TDA3Engine.Tower">
-    <Name>Torre Pegajosa</Name>
+    <Name>Pegajosa</Name>
     <Description>Cuesta poco</Description>
     <ThumbnailAsset>pegajosa_thumb</ThumbnailAsset>
     <TextureAsset>pegajosaTower</TextureAsset>
@@ -11,12 +11,12 @@
     <MaxLevel>2</MaxLevel>
     <InitialStatistics>
       <Health>100</Health>
-      <Damage>12</Damage>
+      <Damage>40</Damage>
       <Speed>0.9</Speed>
       <Accuracy>1</Accuracy>
       <CriticalChance>1</CriticalChance>
       <CriticalHitScalar>0.5</CriticalHitScalar>
-      <Radius>3</Radius>
+      <Radius>2</Radius>
     </InitialStatistics>
     <UpgradeStatistics>
       <HealthIncrease>20</HealthIncrease>

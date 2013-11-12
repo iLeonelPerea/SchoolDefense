@@ -171,7 +171,10 @@ namespace TDA3Engine
             {
                 Monsters[i].Wave = this;
                 Monsters[i].Delay = MonsterSpawnTimer * (i + 1);
-                Monsters[i].Position = new Vector2(p.X, p.Y);
+                if (Monsters[i].Type == TypeElement.Flying)
+                    Monsters[i].Position = new Vector2(p.X, p.Y-10);
+                else
+                    Monsters[i].Position = new Vector2(p.X, p.Y);
             }
 
             IsDone = false;

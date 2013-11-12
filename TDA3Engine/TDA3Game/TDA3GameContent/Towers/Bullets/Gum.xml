@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <XnaContent>
   <Asset Type="TDA3Engine.Bullet">
-    <Type>Normal</Type>
-    <BType>Armor</BType>
+    <Type>DoS</Type>
+    <BType>Normal</BType>
     <AoERadius>0</AoERadius>
     <dotDamagePercentage>0</dotDamagePercentage>
     <dotTime>0</dotTime>
     <dosTime>2.5</dosTime>
-    <decSpeed>0.2</decSpeed>
+    <decSpeed>0.6</decSpeed>
     <TextureAsset>gum</TextureAsset>
     <ParticleAsset>gum_particle</ParticleAsset>
     <Speed>400</Speed>

@@ -390,39 +390,44 @@ namespace TDA3Engine
 
         public void Update(GameTime gameTime, Mouse activeMouse)
         {
-            if (bufftime > 0)
+            if (bulletBase.BType == TypeElement.Normal || bulletBase.BType == TypeElement.Invisible
+                || bulletBase.BType == TypeElement.Subterrain || bulletBase.BType == TypeElement.Invisible
+                 || bulletBase.BType == TypeElement.Flying)
             {
-                UpdateBuff(gameTime);
-                if (bufftimer > bufftime)
+                if (bufftime > 0)
                 {
-                    poder = false;
-                    upgraded = false;
-                    bufftimer = 0.0f;
-                    bufftime = 0.0f;
+                    UpdateBuff(gameTime);
+                    if (bufftimer > bufftime)
+                    {
+                        poder = false;
+                        upgraded = false;
+                        bufftimer = 0.0f;
+                        bufftime = 0.0f;
+                    }
+                }
+                if (IsPlaced) PlacedTime += (float)(gameTime.ElapsedGameTime.TotalSeconds * Session.singleton.Speed);
+                if (timer > 0)
+                {
+                    timer -= (float)(gameTime.ElapsedGameTime.TotalSeconds * Session.singleton.Speed);
+                }
+
+                UpdateMouse(gameTime, activeMouse);
+
+                foreach (Bullet b in Bullets)
+                {
+                    b.Update(gameTime);
+                }
+
+                if (Target == null)
+                {
+                    Target = FindTarget();
+                }
+                else
+                {
+
+                    UpdateTarget(gameTime);
                 }
             }
-            if (IsPlaced) PlacedTime += (float)(gameTime.ElapsedGameTime.TotalSeconds * Session.singleton.Speed);
-            if (timer > 0)
-            {
-                timer -= (float)(gameTime.ElapsedGameTime.TotalSeconds * Session.singleton.Speed);
-            }
-
-            UpdateMouse(gameTime, activeMouse);
-
-            foreach (Bullet b in Bullets)
-            {
-                b.Update(gameTime);
-            }
-
-            if (Target == null)
-            {
-                Target = FindTarget();
-            }
-            else
-            {
-                UpdateTarget(gameTime);
-            }
-
         }
 
         private void UpdateTarget(GameTime gameTime)

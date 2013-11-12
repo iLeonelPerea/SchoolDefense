@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework;
 namespace TDA3Engine
 {
     public enum TypeElement { 
-        Flying, Terrain, Armor, Normal 
+        Flying, Armor, Subterrain, Normal, Invisible 
     }
     public class Monster : GameplayObject
     {
@@ -337,7 +337,8 @@ namespace TDA3Engine
             DistanceTraveled = 0;
             newVelocity.Normalize();
             Velocity = Vector2.Multiply(newVelocity, Speed);
-            Rotation = (float)Math.Atan2(Velocity.Y, Velocity.X);
+            //Rotation = (float)Math.Atan2(Velocity.Y, Velocity.X);
+            Rotation = (float)0;
         }
 
         public void AddToWave(Wave w)
@@ -365,9 +366,9 @@ namespace TDA3Engine
         public void hit(Bullet bullet, Tower Owner)
         {
             switch(bullet.BType){
-                case TypeElement.Armor:
+                case TypeElement.Invisible:
                     switch (Type){
-                        case TypeElement.Armor:
+                        case TypeElement.Invisible:
                             if (Owner.upgraded)
                             {
                                 Type = TypeElement.Normal;
@@ -429,9 +430,33 @@ namespace TDA3Engine
                             break;
                     }
                     break;
+                case TypeElement.Subterrain:
+                    switch (Type)
+                    {
+                        case TypeElement.Armor:
+                            damage(Owner, 0);
+                            break;
+                        case TypeElement.Flying:
+                            damage(Owner, 0);
+                            break;
+                        case TypeElement.Subterrain:
+                            damage(Owner, 5);
+                            break;
+                        case TypeElement.Normal:
+                            if (Owner.upgraded)
+                            {
+                                damage(Owner, 5);
+                            }
+                            else
+                            {
+                                damage(Owner, 1);
+                            }
+                            break;
+                    }
+                    break;
             }
             //AudioManager.singleton.PlaySound(HitCueName);
-            if (bullet.BType == TypeElement.Terrain && Type == TypeElement.Terrain)
+            if (bullet.BType == TypeElement.Normal && Type == TypeElement.Normal)
             {
                 damage(Owner, 1);
             }

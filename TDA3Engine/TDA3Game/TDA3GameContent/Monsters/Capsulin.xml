@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <XnaContent>
   <Asset Type="TDA3Engine.Monster">
-    <Name>Alien2</Name>
+    <Name>Capsulin</Name>
     <Description/>
     <Alpha>1.0</Alpha>
-    <Speed>50</Speed>
-    <Type>Invisible</Type>
+    <Speed>30</Speed>
+    <Type>Subterrain</Type>
     <Health>150</Health>
-    <TextureAsset>alien</TextureAsset>
-    <HitTextureAsset>alien_hit</HitTextureAsset>
+    <TextureAsset>capsulin</TextureAsset>
+    <HitTextureAsset>capsulin_hit</HitTextureAsset>
     <HitCueName>Hit</HitCueName>
     <IsBoss>false</IsBoss>
   </Asset>

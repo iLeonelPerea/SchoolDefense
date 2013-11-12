@@ -19,6 +19,7 @@ namespace TDA3Engine
 
     public enum BulletType
     {
+        Multi,
         Normal,
         AoE,
         DoT,

@@ -158,6 +158,8 @@ namespace TDA3Engine
                     b.Deactivate();
                 }
             }
+            ResetTowerReferences();
+            Session.UI.MapRegion.ResetTowerReferences();
         }
 
         public void Initialize(SpriteFont sFont)
@@ -468,7 +470,7 @@ namespace TDA3Engine
 
             TablasMultiplicar.Add("Pregunta", new Text("", new Vector2(1017,607)));
             TablasMultiplicar.Add("Respuesta", new Text("", new Vector2(1117, 607)));
-            TablasMultiplicar.Add("Poder", new Text(""+PoderesTotales, new Vector2(1000, 501)));
+            TablasMultiplicar.Add("Poder", new Text("Dulces "+PoderesTotales, new Vector2(1000, 501)));
             CambiarTabla();
 
             //x += tex.Width;
@@ -629,6 +631,8 @@ namespace TDA3Engine
             if (Session.Map.State == MapState.WaveDelay)
             {
                 Session.Map.StartNextWaveNow();
+                ResetTowerReferences();
+                Session.UI.MapRegion.ResetTowerReferences();
             }
         }
 
