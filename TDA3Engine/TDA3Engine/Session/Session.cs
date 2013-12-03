@@ -105,7 +105,7 @@ namespace TDA3Engine
             ActivePlayer = new Player();
             ActivePlayer.Money = (uint)map.Money;
             ActivePlayer.PlacedTowers = new List<Tower>(20);
-            health = 20;  //change to map settings
+            health = 1;  //change to map settings
 
             MoneyDisplay = String.Format("Dinero Disponible: {0}", ActivePlayer.Money);
             TowersDisplay = String.Format("Torres: {0}", ActivePlayer.PlacedTowers.Count);

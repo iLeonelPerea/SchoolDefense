@@ -170,7 +170,8 @@ namespace TDA3Game
         void PlaySelect(object sender, EventArgs e)
         {
             ExitScreen();
-            levelselect.ActivateScreen();
+            //levelselect.ActivateScreen();
+            ScreenSystem.AddScreen(new LevelSelectionScreen());
         }
 
         void QuitSelect(object sender, EventArgs e)

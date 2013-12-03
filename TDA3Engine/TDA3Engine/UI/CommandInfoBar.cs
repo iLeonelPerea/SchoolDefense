@@ -75,6 +75,7 @@ namespace TDA3Engine
         int izqui = 0;
         List<int> tablasSeleccionadas = new List<int>();
         private bool selectTablas = false;
+        bool tablasInicializadas = false;
 
         KeyboardState oldKeyboardState = Keyboard.GetState();
 
@@ -167,8 +168,10 @@ namespace TDA3Engine
         public void Initialize(SpriteFont sFont)
         {
             spriteFont = sFont;
-            InitializeTablas();
-            //iniciarSinTablas();
+            if(!tablasInicializadas)
+                InitializeTablas();
+            else
+                iniciarSinTablas();
         }
 
         void clickableTower_LeftClickEvent(object sender, EventArgs e)
@@ -499,6 +502,7 @@ namespace TDA3Engine
 
         private void InitializeTablas()
         {
+            tablasInicializadas = true;
             int y = StatsAndControls.Dimensions.Top + padding;
             Vector2 d = spriteFont.MeasureString(Session.HealthDisplay);
             y += (int)(d.Y + spriteFont.LineSpacing);
