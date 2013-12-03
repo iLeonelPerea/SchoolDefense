@@ -10,7 +10,7 @@
     <decSpeed>0.2</decSpeed>
     <TextureAsset>pebble</TextureAsset>
     <ParticleAsset>pebble_particle</ParticleAsset>
-    <Speed>400</Speed>
-    <DieTime>0.3</DieTime>
+    <Speed>100</Speed>
+    <DieTime>0.2</DieTime>
   </Asset>
 </XnaContent>

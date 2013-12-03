@@ -11,6 +11,6 @@
     <TextureAsset>bomb</TextureAsset>
     <ParticleAsset>bomb_particle</ParticleAsset>
     <Speed>400</Speed>
-    <DieTime>0.3</DieTime>
+    <DieTime>0.5</DieTime>
   </Asset>
 </XnaContent>

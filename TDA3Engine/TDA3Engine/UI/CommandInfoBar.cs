@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -158,6 +159,7 @@ namespace TDA3Engine
                     b.Deactivate();
                 }
             }
+            //Aquii vaaaa  el cancel
             ResetTowerReferences();
             Session.UI.MapRegion.ResetTowerReferences();
         }
@@ -166,7 +168,7 @@ namespace TDA3Engine
         {
             spriteFont = sFont;
             InitializeTablas();
-            iniciarSinTablas();
+            //iniciarSinTablas();
         }
 
         void clickableTower_LeftClickEvent(object sender, EventArgs e)
@@ -340,7 +342,12 @@ namespace TDA3Engine
 
                 Button b = new Button(Session.Map.SmallNormalButtonTexture, bpos, new Text(bt, spriteFont, tpos), Session.Map.ForeColor, clickedTower);
                 b.LeftClickEvent += new EventHandler(buyTower_LeftClick);
-                SelectedTower.Add("BuyTower", b);
+                //SelectedTower.Add("BuyTower", b);
+                Tower t = b.StoredObject as Tower;
+                 if (t != null)
+                 {
+                     Session.SelectTower(t);
+                 }
             }
             else
             {
@@ -993,10 +1000,18 @@ namespace TDA3Engine
                             if (PoderesTotales < 5)
                                 PoderesTotales++;
                             respuesta = "si";
+                            using (System.IO.StreamWriter file = File.AppendText(@"..\..\..\Log_resp_correctas.txt"))
+                             {
+                                 file.WriteLine(izqui + " * " + dere + " = " + respuesta);
+                             }
                         }
                         else
                         {
                             respuesta = "no";
+                            using (System.IO.StreamWriter file = File.AppendText(@"..\..\..\Log_resp_incorrectas.txt"))
+                             {
+                                 file.WriteLine(izqui + " * " + dere + " = " + respuesta);
+                             }
                         }
                         ElapsedTime = 15;
                     }

@@ -10,7 +10,7 @@
     <decSpeed>0.6</decSpeed>
     <TextureAsset>gum</TextureAsset>
     <ParticleAsset>gum_particle</ParticleAsset>
-    <Speed>400</Speed>
-    <DieTime>0.3</DieTime>
+    <Speed>100</Speed>
+    <DieTime>0.5</DieTime>
   </Asset>
 </XnaContent>

@@ -390,7 +390,7 @@ namespace TDA3Engine
 
         public void Update(GameTime gameTime, Mouse activeMouse)
         {
-            if (bulletBase.BType == TypeElement.Normal || bulletBase.BType == TypeElement.Invisible
+            if (bulletBase.BType == TypeElement.Normal || bulletBase.BType == TypeElement.Armor
                 || bulletBase.BType == TypeElement.Subterrain || bulletBase.BType == TypeElement.Invisible
                  || bulletBase.BType == TypeElement.Flying)
             {

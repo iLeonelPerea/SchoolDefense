@@ -6,7 +6,7 @@
     <Alpha>1.0</Alpha>
     <Speed>50</Speed>
     <Type>Invisible</Type>
-    <Health>150</Health>
+    <Health>550</Health>
     <TextureAsset>invisalien</TextureAsset>
     <HitTextureAsset>invisalien_hit</HitTextureAsset>
     <HitCueName>Hit</HitCueName>

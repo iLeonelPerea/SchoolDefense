@@ -6,7 +6,7 @@
     <Alpha>1.0</Alpha>
     <Speed>15</Speed>
     <Type>Armor</Type>
-    <Health>150</Health>
+    <Health>850</Health>
     <TextureAsset>gelalien</TextureAsset>
     <HitTextureAsset>gelalien_hit</HitTextureAsset>
     <HitCueName>Hit</HitCueName>

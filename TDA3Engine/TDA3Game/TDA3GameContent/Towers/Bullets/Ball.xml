@@ -10,7 +10,7 @@
     <decSpeed>0.2</decSpeed>
     <TextureAsset>ball</TextureAsset>
     <ParticleAsset>ball_particle</ParticleAsset>
-    <Speed>400</Speed>
-    <DieTime>0.3</DieTime>
+    <Speed>300</Speed>
+    <DieTime>0.2</DieTime>
   </Asset>
 </XnaContent>

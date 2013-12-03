@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <XnaContent>
   <Asset Type="TDA3Engine.Map">
-    <Name>Forest</Name>
+    <Name>Salon</Name>
     <Dimensions>15 11</Dimensions>
     <TileDimensions>64 64</TileDimensions>
     <Description>Tema forest</Description>
     <ThumbnailAsset>thumbnail</ThumbnailAsset>
     <TileSheetAsset>tiles</TileSheetAsset>
     <GroundTiles>
-      0 0 0 0 0 2 2 2 0 0 4 0 0 0 0
-      0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 4 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-      0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+      0 4 0 2 0 1 2 5 0 0 4 0 0 1 0
+      0 0 2 0 0 0 0 0 0 0 0 0 0 0 4
+      0 0 1 0 0 2 0 0 0 4 0 2 0 0 0
+      0 2 0 0 0 0 0 0 0 0 0 0 0 0 2
+      0 0 1 0 0 4 0 2 4 2 0 0 1 0 0
+      0 0 0 0 0 0 4 0 0 0 1 0 0 0 1
+      0 4 0 2 0 0 2 0 2 0 0 0 2 0 1
+      0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+      4 0 0 0 0 2 1 0 0 0 4 0 0 0 0
+      0 0 2 0 0 0 0 4 2 0 0 0 0 0 2
+      1 0 0 4 0 2 0 0 0 1 0 0 2 0 4
     </GroundTiles>
     <PathTiles>
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -50,7 +50,7 @@
       <Item>VerySlowAliens</Item>
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
-    <Difficulty>1</Difficulty>
+    <Difficulty>3</Difficulty>
     <Money>2800</Money>
     <ForeColorArray>124 189 70 255</ForeColorArray>
     <ErrorColorArray>255 0 0 255</ErrorColorArray>
