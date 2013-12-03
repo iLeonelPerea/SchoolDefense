@@ -39,15 +39,11 @@
     <CastleAssetName>escuela</CastleAssetName>
     <Endless>false</Endless>
     <TowersAvailable>
-      <Item>Nerdin</Item>
-      <Item>Pegajosa</Item>
       <Item>Resorterin</Item>
       <Item>Jugueton</Item>
-      <Item>Gloton</Item>
     </TowersAvailable>
     <WavesAvailable>
-      <Item>VerySlowAliens</Item>
-      <Item>VerySlowAliens</Item>
+      <Item>Easy</Item>
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
     <Difficulty>1</Difficulty>

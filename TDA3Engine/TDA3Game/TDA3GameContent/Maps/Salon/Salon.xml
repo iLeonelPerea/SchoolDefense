@@ -8,17 +8,17 @@
     <ThumbnailAsset>thumbnail</ThumbnailAsset>
     <TileSheetAsset>tiles</TileSheetAsset>
     <GroundTiles>
-      0 4 0 2 0 1 2 5 0 0 4 0 0 1 0
-      0 0 2 0 0 0 0 0 0 0 0 0 0 0 4
-      0 0 1 0 0 2 0 0 0 4 0 2 0 0 0
-      0 2 0 0 0 0 0 0 0 0 0 0 0 0 2
-      0 0 1 0 0 4 0 2 4 2 0 0 1 0 0
+      0 4 0 4 0 1 2 5 0 0 4 0 0 1 0
+      0 0 1 0 0 0 0 0 0 0 0 0 0 0 4
+      0 0 1 0 0 2 0 0 0 4 0 1 0 0 0
+      0 2 0 0 0 0 0 0 0 0 0 0 0 0 1
+      0 0 1 0 0 4 0 2 4 4 0 0 1 0 0
       0 0 0 0 0 0 4 0 0 0 1 0 0 0 1
-      0 4 0 2 0 0 2 0 2 0 0 0 2 0 1
+      0 4 0 4 0 0 4 0 1 0 0 0 2 0 1
       0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
       4 0 0 0 0 2 1 0 0 0 4 0 0 0 0
-      0 0 2 0 0 0 0 4 2 0 0 0 0 0 2
-      1 0 0 4 0 2 0 0 0 1 0 0 2 0 4
+      0 0 1 0 0 0 0 4 2 0 0 0 0 0 4
+      1 0 0 4 4 4 0 0 0 1 0 0 4 0 4
     </GroundTiles>
     <PathTiles>
       0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
@@ -46,12 +46,13 @@
       <Item>Gloton</Item>
     </TowersAvailable>
     <WavesAvailable>
-      <Item>VerySlowAliens</Item>
-      <Item>VerySlowAliens</Item>
+      <Item>Easy</Item>
+      <Item>Medium</Item>
+      <Item>Dificult</Item>
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
     <Difficulty>3</Difficulty>
-    <Money>2800</Money>
+    <Money>3800</Money>
     <ForeColorArray>124 189 70 255</ForeColorArray>
     <ErrorColorArray>255 0 0 255</ErrorColorArray>
     <InfoBarBackgroundAsset>infobar_bg</InfoBarBackgroundAsset>

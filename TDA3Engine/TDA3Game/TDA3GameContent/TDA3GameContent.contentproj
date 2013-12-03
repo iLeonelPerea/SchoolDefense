@@ -306,8 +306,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>
-    <Compile Include="Wave\VerySlowAliens.xml">
-      <Name>VerySlowAliens</Name>
+    <Compile Include="Wave\Easy.xml">
+      <Name>Easy</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <SubType>Designer</SubType>
@@ -1130,6 +1130,20 @@
   <ItemGroup>
     <Compile Include="Maps\Pasillo\Pasillo.xml">
       <Name>Pasillo</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Wave\Medium.xml">
+      <Name>Medium</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Wave\Dificult.xml">
+      <Name>Dificult</Name>
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>

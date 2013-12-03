@@ -18,11 +18,16 @@
       <Item>Gelalien</Item>
       <Item>Navesin</Item>
       <Item>Capsulin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Invisalien</Item>
+      <Item>Gelalien</Item>
+      <Item>Navesin</Item>
+      <Item>Capsulin</Item>
     </MonsterAssets>
-    <Title>20 Aliens Lentos</Title>
+    <Title>20 Aliens Dificiles</Title>
     <BossWave>false</BossWave>
-    <MonsterSpawnTimer>3.5</MonsterSpawnTimer>
-    <MoneyPerKill>10</MoneyPerKill>
+    <MonsterSpawnTimer>0.5</MonsterSpawnTimer>
+    <MoneyPerKill>20</MoneyPerKill>
     <BossMoneyScalar>2.0</BossMoneyScalar>
   </Asset>
 </XnaContent>
