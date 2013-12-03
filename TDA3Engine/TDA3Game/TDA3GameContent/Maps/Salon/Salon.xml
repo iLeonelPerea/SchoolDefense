@@ -52,7 +52,7 @@
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
     <Difficulty>3</Difficulty>
-    <Money>3800</Money>
+    <Money>600</Money>
     <ForeColorArray>124 189 70 255</ForeColorArray>
     <ErrorColorArray>255 0 0 255</ErrorColorArray>
     <InfoBarBackgroundAsset>infobar_bg</InfoBarBackgroundAsset>

@@ -6,7 +6,7 @@
     <Alpha>1.0</Alpha>
     <Speed>30</Speed>
     <Type>Subterrain</Type>
-    <Health>250</Health>
+    <Health>450</Health>
     <TextureAsset>capsulin</TextureAsset>
     <HitTextureAsset>capsulin_hit</HitTextureAsset>
     <HitCueName>Hit</HitCueName>

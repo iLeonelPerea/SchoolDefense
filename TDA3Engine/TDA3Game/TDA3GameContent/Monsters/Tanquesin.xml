@@ -6,7 +6,7 @@
     <Alpha>1.0</Alpha>
     <Speed>50</Speed>
     <Type>Normal</Type>
-    <Health>350</Health>
+    <Health>550</Health>
     <TextureAsset>tanquesin</TextureAsset>
     <HitTextureAsset>tanquesin_hit</HitTextureAsset>
     <HitCueName>Hit</HitCueName>

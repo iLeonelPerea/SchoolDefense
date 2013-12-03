@@ -18,7 +18,7 @@
     </MonsterAssets>
     <Title>14 Aliens debiles</Title>
     <BossWave>false</BossWave>
-    <MonsterSpawnTimer>3.5</MonsterSpawnTimer>
+    <MonsterSpawnTimer>4.5</MonsterSpawnTimer>
     <MoneyPerKill>10</MoneyPerKill>
     <BossMoneyScalar>2.0</BossMoneyScalar>
   </Asset>
