@@ -240,7 +240,8 @@ namespace TDA3Engine
                 spriteFont, new Vector2(SelectedTower.Dimensions.Left + padding, stats.Rectangle.Bottom));
             //SelectedTower.Add("Specials", specials);
             
-            Text price = new Text(String.Format("Price: {0}", clickedTower.TotalCost), spriteFont, new Vector2(SelectedTower.Dimensions.Left + padding, specials.Rectangle.Bottom));
+            //checar el total cost.. d dnd lo saca
+            Text price = new Text(String.Format("Price: {0}", clickedTower.Cost), spriteFont, new Vector2(SelectedTower.Dimensions.Left + padding, specials.Rectangle.Bottom));
             SelectedTower.Add("Price", price);
 
             if (t.IsPlaced)
@@ -389,7 +390,7 @@ namespace TDA3Engine
                 b.ButtonText.Value = String.Format("Poderes: {0}", clickedTower.UpgradeCost);
                 //SelectedTower.GetButton("SellTower").ButtonText.Value = String.Format("Vender (Recibes {0})", (int)(clickedTower.TotalCost * clickedTower.SellScalar));
                 //SelectedTower.GetText("Stats").Value = clickedTower.CurrentStatistics.ToShortString();
-                //SelectedTower.GetText("Price").Value = String.Format("Precio: {0}", clickedTower.TotalCost);
+                SelectedTower.GetText("Price").Value = String.Format("Precio: {0}", clickedTower.TotalCost);
                 //SelectedTower.GetText("TowerName").Value = clickedTower.Name + " " + (clickedTower.Level + 1).ToString();
 
                 if (clickedTower.UpgradeCost > PoderesTotales && t.Level == 2)
@@ -417,7 +418,7 @@ namespace TDA3Engine
                 b.ButtonText.Value = String.Format("Mejorar (Cuesta {0})", clickedTower.UpgradeCost);
                 //SelectedTower.GetButton("SellTower").ButtonText.Value = String.Format("Vender (Recibes {0})", (int)(clickedTower.TotalCost * clickedTower.SellScalar));
                 //SelectedTower.GetText("Stats").Value = clickedTower.CurrentStatistics.ToShortString();
-                //SelectedTower.GetText("Price").Value = String.Format("Precio: {0}", clickedTower.TotalCost);
+                SelectedTower.GetText("Price").Value = String.Format("Precio: {0}", clickedTower.TotalCost);
                 //SelectedTower.GetText("TowerName").Value = clickedTower.Name + " " + (clickedTower.Level + 1).ToString();
 
                 if (clickedTower.UpgradeCost > PoderesTotales && t.Level >= 2)
