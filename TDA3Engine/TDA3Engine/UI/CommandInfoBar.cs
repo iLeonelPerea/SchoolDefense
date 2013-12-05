@@ -147,8 +147,10 @@ namespace TDA3Engine
 
         void Session_TowerPurchased(object sender, TowerEventArgs ptea)
         {
+            //Aqui esta el error.
             ptea.t.LeftClickEvent += new EventHandler(clickableTower_LeftClickEvent);
             Button b = SelectedTower.GetButton("BuyTower");
+            /*
             if (clickedTower.Cost > Session.ActivePlayer.Money)
             {
                 b.Texture = Session.Map.SmallErrorButtonTexture;
@@ -159,7 +161,7 @@ namespace TDA3Engine
                     b.LeftClickEvent -= buyTower_LeftClick;
                     b.Deactivate();
                 }
-            }
+            }*/
             //Aquii vaaaa  el cancel
             ResetTowerReferences();
             Session.UI.MapRegion.ResetTowerReferences();
@@ -219,8 +221,11 @@ namespace TDA3Engine
                     Tower t = b.StoredObject as Tower;
                     if (t != null)
                     {
-                        clickedTower = t;
-                        InitializeSelectedTower(t);
+                        if (t.Cost <= Session.ActivePlayer.Money)
+                        {
+                            clickedTower = t;
+                            InitializeSelectedTower(t);
+                        }
                     }
                 }
             }

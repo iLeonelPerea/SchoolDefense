@@ -6,7 +6,7 @@
     <ThumbnailAsset>pegajosa_thumb</ThumbnailAsset>
     <TextureAsset>pegajosaTower</TextureAsset>
     <RadiusTextureAsset>radius</RadiusTextureAsset>
-    <Cost>100</Cost>
+    <Cost>110</Cost>
     <Level>1</Level>
     <MaxLevel>2</MaxLevel>
     <InitialStatistics>

@@ -4,6 +4,19 @@
   <Asset Type="TDA3Engine.Wave">
     <MonsterAssets>
       <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
     </MonsterAssets>
     <Title>14 Aliens debiles</Title>
     <BossWave>false</BossWave>

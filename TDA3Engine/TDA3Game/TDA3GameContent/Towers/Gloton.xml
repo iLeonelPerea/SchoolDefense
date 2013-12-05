@@ -6,7 +6,7 @@
     <ThumbnailAsset>gloton_thumb</ThumbnailAsset>
     <TextureAsset>glotonTower</TextureAsset>
     <RadiusTextureAsset>radius</RadiusTextureAsset>
-    <Cost>100</Cost>
+    <Cost>200</Cost>
     <Level>1</Level>
     <MaxLevel>2</MaxLevel>
     <InitialStatistics>

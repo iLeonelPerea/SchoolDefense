@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <!-- TODO: replace this Asset with your own XML asset data. -->
+  <Asset Type="TDA3Engine.Wave">
+    <MonsterAssets>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+      <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
+    </MonsterAssets>
+    <Title>12 Aliens tanquesin y Navesin</Title>
+    <BossWave>false</BossWave>
+    <MonsterSpawnTimer>4.2</MonsterSpawnTimer>
+    <MoneyPerKill>10</MoneyPerKill>
+    <BossMoneyScalar>2.0</BossMoneyScalar>
+  </Asset>
+</XnaContent>

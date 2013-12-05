@@ -43,11 +43,13 @@
       <Item>Jugueton</Item>
     </TowersAvailable>
     <WavesAvailable>
-      <Item>Easy</Item>
+      <Item>Easy1</Item>
+      <Item>Easy2</Item>
+      <Item>Easy3</Item>
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
     <Difficulty>1</Difficulty>
-    <Money>400</Money>
+    <Money>140</Money>
     <ForeColorArray>124 189 70 255</ForeColorArray>
     <ErrorColorArray>255 0 0 255</ErrorColorArray>
     <InfoBarBackgroundAsset>infobar_bg</InfoBarBackgroundAsset>

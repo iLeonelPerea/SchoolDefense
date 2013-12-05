@@ -6,7 +6,7 @@
     <ThumbnailAsset>nerdin_thumb</ThumbnailAsset>
     <TextureAsset>NerdinTower</TextureAsset>
     <RadiusTextureAsset>radius</RadiusTextureAsset>
-    <Cost>100</Cost>
+    <Cost>140</Cost>
     <Level>1</Level>
     <MaxLevel>2</MaxLevel>
     <InitialStatistics>

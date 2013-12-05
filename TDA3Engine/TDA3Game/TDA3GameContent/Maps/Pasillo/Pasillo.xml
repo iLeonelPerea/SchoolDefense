@@ -45,7 +45,6 @@
       <Item>Jugueton</Item>
     </TowersAvailable>
     <WavesAvailable>
-      <Item>Easy</Item>
       <Item>Medium</Item>
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
