@@ -16,7 +16,7 @@
       <Accuracy>1</Accuracy>
       <CriticalChance>1</CriticalChance>
       <CriticalHitScalar>0.5</CriticalHitScalar>
-      <Radius>3</Radius>
+      <Radius>4</Radius>
     </InitialStatistics>
     <UpgradeStatistics>
       <HealthIncrease>20</HealthIncrease>
