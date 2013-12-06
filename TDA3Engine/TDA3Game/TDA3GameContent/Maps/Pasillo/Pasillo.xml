@@ -46,6 +46,8 @@
     </TowersAvailable>
     <WavesAvailable>
       <Item>Medium1</Item>
+      <Item>Medium2</Item>
+      <Item>Medium3</Item>
     </WavesAvailable>
     <WaveDelay>1</WaveDelay>
     <Difficulty>2</Difficulty>

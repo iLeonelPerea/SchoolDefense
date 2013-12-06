@@ -21,7 +21,7 @@
     <UpgradeStatistics>
       <HealthIncrease>20</HealthIncrease>
       <DamageIncrease>12</DamageIncrease>
-      <SpeedIncrease>0.2</SpeedIncrease>
+      <SpeedIncrease>0.5</SpeedIncrease>
       <AccuracyIncrease>1</AccuracyIncrease>
       <CriticalChanceIncrease>1</CriticalChanceIncrease>
       <CriticalHitScalarIncrease>0.5</CriticalHitScalarIncrease>

@@ -4,20 +4,25 @@
   <Asset Type="TDA3Engine.Wave">
     <MonsterAssets>
       <Item>Tanquesin</Item>
+      <Item>Navesin</Item>
       <Item>Tanquesin</Item>
       <Item>Tanquesin</Item>
+      <Item>Invisalien</Item>
       <Item>Navesin</Item>
       <Item>Tanquesin</Item>
       <Item>Navesin</Item>
+      <Item>Navesin</Item>
+      <Item>Invisalien</Item>
+      <Item>Invisalien</Item>
       <Item>Tanquesin</Item>
       <Item>Navesin</Item>
       <Item>Tanquesin</Item>
-      <Item>Navesin</Item>
+      <Item>Invisalien</Item>
       <Item>Tanquesin</Item>
     </MonsterAssets>
-    <Title>10 Aliens</Title>
+    <Title>15 Aliens</Title>
     <BossWave>false</BossWave>
-    <MonsterSpawnTimer>4.5</MonsterSpawnTimer>
+    <MonsterSpawnTimer>3.5</MonsterSpawnTimer>
     <MoneyPerKill>15</MoneyPerKill>
     <BossMoneyScalar>1.5</BossMoneyScalar>
   </Asset>
